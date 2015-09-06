@@ -1,4 +1,11 @@
+import java.util.ArrayList;
+
 import org.junit.Test;
+
+import com.teo.neighborhood.Human;
+import com.teo.neighborhood.HumanFactory;
+import com.teo.neighborhood.Language;
+
 import static org.junit.Assert.*;
 
 /*
@@ -7,9 +14,25 @@ import static org.junit.Assert.*;
  *
  * @author i068969, @date 8/31/15 6:02 PM
  */
-public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+public class HumanFactoryTest {
+    @Test public void testGetHumanInstance() {
+    	HumanFactory factory = new HumanFactory();
+    	ArrayList<Language> lang1 = new ArrayList<>();
+		lang1.add(Language.BABY);
+		lang1.add(Language.BULGARIAN);
+		lang1.add(Language.ITALY);
+    	try {
+			Human baby = (Human) factory.getHumanInstance("Pedigree", 2,lang1);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			fail("not a baby instane");
+		}
+    	
+    	
+    	
+       // Library classUnderTest = new Library();
+        //assertTrue("someLibraryMethod should return 'true'",false);
+        //  assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
+    
 }
