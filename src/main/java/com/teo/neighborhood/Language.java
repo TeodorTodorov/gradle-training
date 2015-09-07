@@ -6,5 +6,5 @@ package com.teo.neighborhood;
  */
 public enum Language {
 	// All Languages in this planet
-	BULGARIAN, ENGLISH, FRANCE, ITALY, DEUTSCH, DRUNK, BABY, NONE
+	BULGARIAN, ENGLISH, FRANCE, ITALY, DEUTSCH, DRUNK, BABY, NONE, JAPANESE, ARABIC
 }
