@@ -18,7 +18,7 @@ public class HumanFactory {
 	 * @throws Exception
 	 */
 	public Humanable getHumanInstance(String name, int age,
-			ArrayList<Language> language) throws Exception {
+			ArrayList<Language> language) throws Exception { //O(1)
 		if (age < 6 && age >= 0) {
 			Humanable result = (Humanable) new Baby(name, age, language);
 			return result;

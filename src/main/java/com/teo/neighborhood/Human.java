@@ -5,7 +5,7 @@ import java.util.EnumMap;
 
 import com.teo.neighborhoodInterfaces.Humanable;
 
-public abstract class  Human implements Humanable {
+public abstract class  Human implements Humanable {//O(1)
 	private int age = 0;
 	private String name = null;
 	private ArrayList<Language> language;
@@ -16,7 +16,7 @@ public abstract class  Human implements Humanable {
 	 * @param name
 	 * @param language
 	 */
-	public Human(int age, String name, ArrayList<Language> language) {
+	public Human(int age, String name, ArrayList<Language> language) {//O(1)
 
 		this.age = age;
 		this.name = name;
@@ -30,7 +30,7 @@ public abstract class  Human implements Humanable {
 	 * 
 	 * @see com.teo.neighborhoodInterfaces.Humanable#getAge()
 	 */
-	public int getAge() {
+	public int getAge() {//O(1)
 		// TODO Auto-generated method stub
 		return this.age;
 	}
@@ -40,7 +40,7 @@ public abstract class  Human implements Humanable {
 	 * 
 	 * @see com.teo.neighborhoodInterfaces.Humanable#getName()
 	 */
-	public String getName() {
+	public String getName() {//O(1)
 		// TODO Auto-generated method stub
 		return this.name;
 	}
@@ -54,7 +54,7 @@ public abstract class  Human implements Humanable {
 	 */
 
 
-	public ArrayList<Language> getLanguages() {
+	public ArrayList<Language> getLanguages() {//O(1)
 		return this.language;
 	}
 

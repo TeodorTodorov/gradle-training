@@ -17,7 +17,7 @@ public class Start {
 	 * @param args
 	 * @throws Exception
 	 */
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {//O(1)
 
 		ArrayList<Language> lang1 = new ArrayList<>();
 		lang1.add(Language.BABY);

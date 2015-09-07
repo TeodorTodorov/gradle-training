@@ -3,14 +3,14 @@ package com.teo.neighborhood;
 import java.util.ArrayList;
 import java.util.EnumMap;
 
-public class Neighborhood {
-	HumanFactory fact;
-	private int ageSum = 0;
-	private int instanceCount = 0;
-	private ArrayList<Human> humansInNeighborhood;
-	private EnumMap<Language, ArrayList<Human>> speakers ;
+public class Neighborhood { 
+	HumanFactory fact; //O(1)
+	private int ageSum = 0;//O(1)
+	private int instanceCount = 0;//O(1)
+	private ArrayList<Human> humansInNeighborhood;//O(1)
+	private EnumMap<Language, ArrayList<Human>> speakers ;//O(1)
 
-	public  Neighborhood() {
+	public  Neighborhood() {//O(1)
 		this.fact = new HumanFactory();
 		humansInNeighborhood = new ArrayList<>();
 		speakers = new EnumMap<Language, ArrayList<Human>>(
@@ -21,7 +21,7 @@ public class Neighborhood {
 
 
 
-	public ArrayList<Human> getLanguageSpeakers(Language lang) {
+	public ArrayList<Human> getLanguageSpeakers(Language lang) { //O(1)
 		return speakers.get(lang);
 
 	}
@@ -47,7 +47,7 @@ public class Neighborhood {
 
 	}
 
-	public float getMiddleAge() {
+	public float getMiddleAge() {//O(1)
 		// TODO Auto-generated method stub
 		return (this.getAgeSum() / this.getInstanceCount());
 	}
