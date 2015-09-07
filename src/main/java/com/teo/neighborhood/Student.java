@@ -8,8 +8,8 @@ import java.util.ArrayList;
  */
 public class Student extends Human {
 
-	public Student(String name, int age, ArrayList<Language> arr) {
-		super(name, age, arr);
+	public Student(int age, String name, ArrayList<Language> arr) {
+		super(age, name, arr);
 	}
 
 }
