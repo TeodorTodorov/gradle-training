@@ -10,12 +10,10 @@ public class Baby extends com.teo.neighborhood.Human {
 		super(age, name, language);
 	}
 
-	
 	/**
 	 * @param name
 	 * @param age
 	 * @param language
 	 */
-	
 
 }
