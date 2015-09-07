@@ -6,5 +6,6 @@ package com.teo.neighborhood;
  */
 public enum Language {
 	// All Languages in this planet
-	BULGARIAN, ENGLISH, FRANCE, ITALY, DEUTSCH, DRUNK, BABY, NONE, JAPANESE, ARABIC
+	//If you have baby-as a language- why have none as a language???
+	BULGARIAN, ENGLISH, FRENCH, ITALIAN, DEUTSCH, DRUNK, BABY, NONE, JAPANESE, MANDARIN, ARABIC
 }
