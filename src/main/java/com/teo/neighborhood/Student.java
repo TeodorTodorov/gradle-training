@@ -9,8 +9,7 @@ import java.util.ArrayList;
 public class Student extends Human {
 
 	public Student(String name, int age, ArrayList<Language> arr) {
-		super(age, name, arr);
-		// TODO Auto-generated constructor stub
+		super(name, age, arr);
 	}
 
 }
