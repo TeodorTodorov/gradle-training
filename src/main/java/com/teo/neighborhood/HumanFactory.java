@@ -31,7 +31,7 @@ public class HumanFactory {
 		} else if (age <= 60 && age > 25) {
 			Humanable result = (Humanable) new NormalHuman(age, name, language);
 			return result;
-		} else if (age > 60) {
+		} else if (age > 60 && age <= 120) {
 			Humanable result = (Humanable) new Pension(age, name, language);
 			return result;
 		} else {
