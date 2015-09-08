@@ -57,6 +57,11 @@ public abstract class  Human implements Humanable {//O(1)
 	public ArrayList<Language> getLanguages() {//O(1)
 		return this.language;
 	}
+	
+	public void introduce(){
+		System.out.print("Hello, my name is " + this.name + ". I am " + this.age + " years old and I speak ");
+		// TODO this particular instance's languages have to be displayed to the console
+	}
 
 
 	// TEST POINT HERE
